@@ -2,9 +2,17 @@
 
 # Projects
 ## Krato
-apps/krato-web
-apps/krato-web-e2e
-apps/krato-api
+apps/krato-web  
+apps/krato-web-e2e  
+apps/krato-api  
+
+### Description
+Krato is a web app for recording strength workouts. An Angular frontend connects to an ASP.NET Core web API.
+
+### Dependencies
+- Node 20
+- Yarn
+- dotnet SDK 8
 
 ### Generate a new C# library
 ```bash
