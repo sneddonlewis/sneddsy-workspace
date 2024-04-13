@@ -6,6 +6,10 @@ apps/krato-web
 apps/krato-web-e2e
 apps/krato-api
 
+### Generate a new C# library
+```bash
+npx nx generate @nx-dotnet/core:lib krato-api-domain --directory=apps/krato-api --language=C# --template=classlib
+```
 
 # NX Build Tool
 
