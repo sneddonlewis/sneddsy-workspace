@@ -1,0 +1,10 @@
+{
+  "name": "krato-web-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/krato-web-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["krato-web"],
+  "// targets": "to see all targets run: nx show project krato-web-e2e --web",
+  "targets": {}
+}
