@@ -6,10 +6,10 @@ import { RouterModule } from '@angular/router';
   imports: [
     RouterModule
   ],
-  selector: 'app-root',
+  selector: 'kt-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'krato-web';
+  title = 'Krato';
 }

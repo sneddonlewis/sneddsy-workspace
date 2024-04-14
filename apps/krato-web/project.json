@@ -2,7 +2,7 @@
   "name": "krato-web",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "kt",
   "sourceRoot": "apps/krato-web/src",
   "tags": [],
   "targets": {
