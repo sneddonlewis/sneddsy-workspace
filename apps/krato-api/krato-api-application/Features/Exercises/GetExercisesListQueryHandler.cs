@@ -18,13 +18,9 @@ public class GetExercisesListQueryHandler : IRequestHandler<GetExercisesListQuer
         _exerciseRepo = exerciseRepository;
     }
 
-    public Task<List<ExerciseListVm>> Handle(GetExercisesListQuery request, CancellationToken cancellationToken)
+    public async Task<List<ExerciseListVm>> Handle(GetExercisesListQuery request, CancellationToken cancellationToken)
     {
-        // this is where we add the business logic
-        var result = new List<ExerciseListVm>()
-        {
-            new ExerciseListVm { Name = "Push Up" }     
-        };
-        return Task.FromResult<List<ExerciseListVm>>(result);
+        var allExercises = await _exerciseRepo.ListAllAsync();
+        return _mapper.Map<List<ExerciseListVm>>(allExercises);
     }
 }
