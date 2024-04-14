@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TempoTimerConfig } from '../../models/timer-config';
+import { TempoTimerConfig } from '../../models/tempo-timer-config.model';
 import { Router } from '@angular/router';
 import { routePaths } from '../../app.routes';
 
