@@ -23,11 +23,12 @@ public static class StartupExtensions
     {
         if (app.Environment.IsDevelopment())
         {
+            app.UseDeveloperExceptionPage();
             app.UseSwagger();
             app.UseSwaggerUI();
         }
         app
-            .UseCors("open")
+            // .UseCors("open")
             .UseHttpsRedirection();
         app
             .MapControllers();
