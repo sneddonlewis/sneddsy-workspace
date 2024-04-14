@@ -1,0 +1,23 @@
+.start-button {
+  height: 200px;
+  width: 200px;
+  background-color: darkgray;
+  color: yellow;
+  font-size: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-ring {
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lime;
+}
+

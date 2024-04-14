@@ -1,0 +1,14 @@
+<p>{{ isConcentric ? 'Contract' : 'Load' }}: {{ liveTime }} / {{ totalTime }}</p>
+<div class="bar-container">
+  <div class="bar" [style.height]="getBarHeightPercentage()"></div>
+</div>
+
+<p>Load</p>
+<div class="bar-container">
+  <div class="bar" [style.height]="getEccentricHeight()"></div>
+</div>
+
+<p>Contract</p>
+<div class="bar-container">
+  <div class="bar" [style.height]="getConcentricHeight()"></div>
+</div>

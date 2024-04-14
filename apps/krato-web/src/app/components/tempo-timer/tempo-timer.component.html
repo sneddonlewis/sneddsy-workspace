@@ -1,0 +1,43 @@
+<p>{{ config.name }}</p>
+<p>Sets: {{ config.sets }}</p>
+<p>Reps per Set: {{ config.sets }}</p>
+<p>Rest Time: {{ config.restTime }}s</p>
+<p>Tempo: {{ config.eccentricTime }}s load, {{ config.concentricTime}}s contract</p>
+<p>Direction: {{ config.isPushExercise ? 'Push' : 'Pull' }}</p>
+
+<p>Set: {{ currentSet }}</p>
+<p>Rep: {{ currentRep }}</p>
+
+<div class="flex-container flex-centre flex-column">
+  @if (!isStarted) {
+    <kt-start-button (starterFinished)="onStarterFinished()"></kt-start-button>
+  } @else {
+    @switch (phase) {
+      @case (Phase.Eccentric) {
+        <kt-tempo-contract-guide [totalTime]="config.eccentricTime"
+                                 [liveTime]="phaseTimer"
+                                 [isConcentric]="false"
+                                 [isReversed]="false"
+        ></kt-tempo-contract-guide>
+      }
+      @case (Phase.Concentric) {
+        <kt-tempo-contract-guide [totalTime]="config.concentricTime"
+                                 [liveTime]="phaseTimer"
+                                 [isConcentric]="true"
+                                 [isReversed]="true"
+        ></kt-tempo-contract-guide>
+      }
+      @case (Phase.Rest) {
+        <kt-rest-guide [totalTime]="config.restTime"
+                       [liveTime]="phaseTimer"
+        ></kt-rest-guide>
+      }
+    }
+    <div>
+      <p>Total time: {{ totalTimer$ | async }}</p>
+      <p>Total time ( ms ): {{ time$ | async }}</p>
+    </div>
+    <button (click)="pausePlay()">Pause</button>
+    <button (click)="done()">Stop</button>
+  }
+</div>

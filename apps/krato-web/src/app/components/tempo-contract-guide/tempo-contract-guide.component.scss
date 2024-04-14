@@ -1,0 +1,14 @@
+.bar-container {
+  height: 200px; /* Adjust based on your preference */
+  width: 50px; /* Adjust based on your preference */
+  border: 2px solid black;
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+.bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: blue;
+}

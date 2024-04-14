@@ -1,0 +1,17 @@
+ul {
+  list-style-type: none;
+  margin: 2px;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 12px 12px 6px;
+}
+
+li:first-child {
+  border-top: 1px solid lightgray;
+}

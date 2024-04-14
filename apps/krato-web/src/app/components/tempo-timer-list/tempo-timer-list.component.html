@@ -1,0 +1,7 @@
+<ul>
+  @for (timerConfig of timerConfigs; track timerConfig.name) {
+    <li>
+      <p (click)="onSelectTimer(timerConfig)">{{ timerConfig.name }}</p>
+    </li>
+  }
+</ul>
