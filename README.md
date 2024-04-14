@@ -15,6 +15,12 @@ Krato is a web app for recording strength workouts.
 - dotnet SDK 8
 - [Optional] Nx ( or can use with `npx` )
 
+### Development
+From the repo root, run the `start` command to concurrently start the web API and SPA
+```bash
+yarn run start
+```
+
 ### Working with Nx build tool for C#
 
 Generate a new C# library project

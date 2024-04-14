@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "prepare": "nx g @nx-dotnet/core:restore"
+    "prepare": "nx g @nx-dotnet/core:restore",
+    "start": "npx nx run-many --target=serve --projects=krato-api,krato-web --parallel"
   },
   "private": true,
   "dependencies": {
