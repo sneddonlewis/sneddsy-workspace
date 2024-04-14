@@ -11,4 +11,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="../krato-api-persistence/SneddsyWorkspace.Apps.KratoApi.KratoApiPersistence.csproj"/>
+    <ProjectReference Include="../krato-api-application/SneddsyWorkspace.Apps.KratoApi.KratoApiApplication.csproj"/>
+  </ItemGroup>
+
 </Project>
