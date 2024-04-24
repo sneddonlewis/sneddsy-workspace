@@ -12,8 +12,6 @@ export class TimerService {
 
   readonly time$ = this.timerSubject.asObservable();
 
-  constructor() {}
-
   getCountdown(from: number): Observable<number> {
     return this.time$
       .pipe(
